@@ -1,0 +1,22 @@
+-- passport.use(new Auth0Strategy(config.authConfig, (accessToken, refreshToken, extraParams, profile, done) => {
+--   db.user.getUserByAuthId([profile.id], function(err, result) { //cb to execute after return from Auth0 (find user in DB)
+--     if (err) {
+--       console.error(err)
+--     };
+--     let user = result[0];
+--     if (!user) { //if there isn't one, will create
+--       console.log('CREATING USER');
+--       db.user.createUserByAuth([
+--         profile.displayName,
+--         profile.id
+--       ], (err, result) => {
+--         if (err) {
+--           console.error(err)
+--         };
+--         return done(err, result[0]); // GOES TO SERIALIZE USER **done function  is the same thing as 'next' function
+--       })
+--     } else { //when we find the user, return it
+--       return done(err, result);
+--     }
+--   })
+-- }));

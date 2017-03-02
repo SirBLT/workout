@@ -1,0 +1,342 @@
+[
+  {
+    "musc": "chest",
+    "wkout": "Bench Press"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Incline Bench Press"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Decline Bench Press"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Bench Press"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Incline Bench"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Decline Press"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Chest Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Incline Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Dumbbell Decline Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Cable Chest Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Cable Incline Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Cable Decline Fly"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Pec Deck"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Push-ups"
+  },
+  {
+    "musc": "chest",
+    "wkout": "Swiss-Ball Push-ups"
+  },
+  {
+    "musc": "chest",
+    "wkout": "BoSu Push-ups"
+  },
+  {
+    "musc": "chest",
+    "wkout": "T-Bar Chest Press"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Tricep Pull-Down (Rope/Bar/Handle)"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Skull Crusher (Cable/Barbell/Dumbbell)"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Tricep Kick-Back (Cable/Dumbbell)"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Reverse Grip Pull-Down (Bar/Handle)"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Close-Grip Dips"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Seated Dip Machine"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Diamond Wall Push-ups"
+  },
+  {
+    "musc": "tri",
+    "wkout": "Dumbbell Overhead Press"
+  },
+  {
+    "musc": "back",
+    "wkout": "Wide-Grip Pull-ups"
+  },
+  {
+    "musc": "back",
+    "wkout": "Neutral-Grip Pull-ups"
+  },
+  {
+    "musc": "back",
+    "wkout": "Lat Pull-Down (Wide/Close)"
+  },
+  {
+    "musc": "back",
+    "wkout": "Superman Pull-Down"
+  },
+  {
+    "musc": "back",
+    "wkout": "Seated Cable Row (Close/Wide)"
+  },
+  {
+    "musc": "back",
+    "wkout": "Single-Arm Cable Row (High/Mid/Low)"
+  },
+  {
+    "musc": "back",
+    "wkout": "Bent Over Barbell Row"
+  },
+  {
+    "musc": "back",
+    "wkout": "Revere-Grip Barbell Row"
+  },
+  {
+    "musc": "back",
+    "wkout": "Standard Dead-Lift"
+  },
+  {
+    "musc": "back",
+    "wkout": "Diamond Bar Dead-Lift"
+  },
+  {
+    "musc": "back",
+    "wkout": "Cable Dead-Lift"
+  },
+  {
+    "musc": "back",
+    "wkout": "Prone Cobra"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Hammer Curls"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Preacher Curls"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Incline Dumbbell Curls"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Swiss-Ball Dual Cable Curls (High/Low)"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Standing Dual Cable Curls (High/Low)"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Wall-Back Curls (Barbell/Dumbbell)"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Face-Down Incline Curls"
+  },
+  {
+    "musc": "bi",
+    "wkout": "Chin-ups"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Hanging Leg-raises"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Swiss-Ball Leg-raises"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Bicycles"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Half-Inch Knee Raises"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Russian Twist"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Cross-Body Cable Chop"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Swiss-Ball Side Walks"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Side Planks"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Swiss-Ball Cable Crunches"
+  },
+  {
+    "musc": "abs",
+    "wkout": "High Cable Crunches"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Planks"
+  },
+  {
+    "musc": "abs",
+    "wkout": "Up, Half, Full on Swiss-Ball"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Barbell Squats"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Body-Weight Squats"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Leg Press"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Hack Squats"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Walking Lunges"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Multi-Plane Lunges"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Standard Lunges"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Box Jumps"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Leg Extensions"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Leg Curls"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Swiss-Ball Leg Curls"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Swiss-Ball Wall Squats"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Seated Calf-Raises"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Donkey Calf-Raises"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Standing Calf-Raises"
+  },
+  {
+    "musc": "legs",
+    "wkout": "Anterior-Tibialis Raises"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Reverse Cable Fly"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "External Rotations"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Rope Pulls to Forehead"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Upright Rows (Barbell/Cable/Dubmmell)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Front Raises (Cable/Dumbbell/Barbell)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Arnold Press"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Shoulder Press (Barbell/Dumbbell/Machine)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Neutral-Grip Shoulder Press (Dumbbell/Machine)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Standing Lateral Raises (Dumbbell/Cable)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Seated or Kneeling Lateral Raises (Dumbbell)"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Hang Cleans"
+  },
+  {
+    "musc": "shoulders",
+    "wkout": "Anterior, Posterior, and Medial Burnout"
+  }
+]

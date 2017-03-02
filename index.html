@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="workout">
+  <head>
+    <title>Workout Builder Home</title>
+    <link rel="stylesheet" href="./../style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="pageHead">Better Life Tracker</h1>
+    </header>
+
+    <nav class="top">
+      <div class="dropdownBackground">
+        <span class="arrow"></span>
+      </div>
+      <ul class="cool">
+        <li>
+          <a ui-sref="home">HOME</a>
+          <div class="dropdown homedrop">
+            <div class="home">
+              <img src="./backHome.png">
+              <a ui-sref="home">TO THE BATMOBILE!!!</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="/auth">LOG-IN</a>
+          <div class="dropdown logdrop">
+          <div class="logIn">
+            <a href="/auth"><img src="./noWhining.jpg"></a>
+          </div>
+          </div>
+        </li>
+        <li>
+          <a ui-sref="workout">WORKOUT INDEX</a>
+          <ul class="dropdown wkouts">
+            <li>
+              <a ui-sref="workout">How To Get Dem Washboard Abs</a>
+            </li>
+            <li>
+              <a ui-sref="backList">Build A Back Wit Dat V-Shape Taper</a>
+            </li>
+            <li>
+              <a ui-sref="biList">Get Dem Biceps Mad Swole</a>
+            </li>
+            <li>
+              <a ui-sref="chestList">Make Dem Pecs Do Dat Terry Crews Bounce</a>
+            </li>
+            <li>
+              <a ui-sref="legList">Prove You Don't Skip Leg Day, Bro</a>
+            </li>
+            <li>
+              <a ui-sref="deltList">Workouts To Get Dem Bowling Ball Shoulders</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a ui-sref="logRun">LOG A WORKOUT</a>
+          <ul class="dropdown logs">
+            <li>
+              <a ui-sref="logBike">Log A Bike Ride</a>
+            </li>
+            <li>
+              <a ui-sref="logGym">Log A Gym Workout</a>
+            </li>
+            <li>
+              <a ui-sref="logRun">Log A Run So You Can Post Your Stats To Facebook ASAP!!!</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a ui-sref="myWorkouts">MY WORKOUTS</a>
+          <div class="dropdown">
+            <a ui-sref="myWorkouts"><p class="myWork">Click here to access your workouts</p></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+      <ui-view></ui-view>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+        <script src="./public/app.js"></script>
+        <script src="./public/mainCtrl.js"></script>
+        <script src="./public/service.js"></script>
+        <script src="./public/dropdown.js"></script>
+        <script src="./public/runCtrl.js"></script>
+        <script src="./public/nav.js"></script>
+
+
+
+  </body>
+</html>
