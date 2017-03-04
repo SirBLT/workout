@@ -1,2 +1,2 @@
 select * from Running
-where username = $1
+where email = $1

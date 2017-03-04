@@ -15,16 +15,20 @@ body {
 body.fixed-nav .site-wrap {
   transform: scale(1);
 }
+.useless {
+  height: 12vh;
+}
+img.bench {
+  width: 100%;
+  opacity: 0.5;
+}
+.site-wrap {
+  background-image: url(bench.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 175vh;
+  width: 100%;
 
-
-header {
-  text-align: center;
-  height:25vh;
-  background-color: purple;
-  background-size:cover;
-  display:flex;
-  align-items:center;
-  justify-content: center;
 }
 
 .pageHead {
@@ -38,7 +42,7 @@ nav {
   top:0;
   width: 100%;
   transition:all 0.5s;
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 .cool > li > a {

@@ -1,6 +1,6 @@
 update Running
 set
-  username = coalesce($1, username),
+  email = coalesce($1, email),
   timeofday = coalesce($3, timeofday),
   distance = coalesce($4, distance),
   workoutlength = coalesce($5, workoutlength),

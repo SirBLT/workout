@@ -1,1 +1,16 @@
+<div id="logWrapper">
+  <h1 class="gymHeader">Log your latest ride!</h1>
+<p class="gymRow1">User Name:<input type="text" name="" placeholder="User Name" ng-model="logRun.username"></p>
+<p class="gymRow2">Workout Date:<input type="text" name="" placeholder="Date" ng-model="logRun.date"></p><br><br>
+<p class="gymRow1">Time of Day:<input type="text" name="" placeholder="Time HH:MM" ng-model="logRun.timeofday"></p>
+<p class="gymRow2">Run Distance:<input type="text" name="" placeholder="Run Distance" ng-model="logRun.distance"></p><br><br>
+<p class="gymRow1">Workout Length:<input type="text" name="" placeholder="Workout Length" ng-model="logRun.workoutlength"></p>
+<p class="gymRow2">Avg. Speed:<input type="text" name="" placeholder="Avg Speed" ng-model="logRun.avgspeed"></p><br><br>
+<p class="gymRow1">Avg Heartbeat:<input type="text" name="" placeholder="Avg HR (bpm)" ng-model="logRun.avghr"></p>
+<p class="gymRow2">Run Surface:<input type="text" name="" placeholder="Trails/Roads/Stationary" ng-model="logRun.surfacetype"></p><br><br>
+<p class="gymRow1">Difficulty Level:<input type="text" name="" placeholder="1-10" ng-model="logRun.difficulty"></p>
+<p class="gymRow2">Other Workout Notes:<input type="text" name="" placeholder="Other Notes" ng-model="logRun.othernotes"></p><br><br>
 
+<button ng-click="submitLog(logRun)">Submit Workout</button><br><br>
+
+</div>

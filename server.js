@@ -4,16 +4,12 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var massive = require('massive');
 var config = require('./config');
-var passport = require('passport');
-var Auth0Strategy = require('passport-auth0');
+
 
 var app = module.exports = express();
-
 app.use(express.static('./'));
 app.use(bodyParser.json());
-// app.use(session({secret: config.secret}));
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(session({secret: config.secret}));
 
 var massiveUri = config.MASSIVE_URI;
 var massiveServer = massive.connectSync({
@@ -22,24 +18,31 @@ var massiveServer = massive.connectSync({
 app.set('db', massiveServer);
 var db = app.get('db');
 
-passport.use(new Auth0Strategy(config.authConfig, function(accessToken, refreshToken, extraParams, profile, done) {
-  console.log(profile);
-  return done(null, profile);
-}));
+var dbSetup = require('./server/services/dbSetup');
+dbSetup.run();
 
+
+
+var passport = require('./server/services/passport');
+app.use(passport.initialize());
+app.use(passport.session());
 app.get('/auth', passport.authenticate('auth0'));
 
 app.get('/auth/callback', passport.authenticate('auth0', {
   successRedirect: '/#!/',
   failureRedirect: '/auth'
 }));
+app.get('/api/logout', function(req, res, next) {
+	req.logout();
+	return res.status(200)
+		.send('logged out');
+});
 
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
-passport.deserializeUser(function(obj, done) {
-  done(null, obj);
-});
+var isAuthed = function(req, res, next) {
+	if (!req.isAuthenticated()) return res.status(401)
+		.send();
+	return next();
+};
 
 app.get('/auth/me', function(req, res, next) {
   if (!req.user)
@@ -49,12 +52,8 @@ app.get('/auth/me', function(req, res, next) {
 
 
 
-var serverCtrl = require('./serverCtrl');
-app.get('/api/Users', serverCtrl.getUsers);
-app.get('/api/Users/:userid', serverCtrl.getUser);
-app.post('/api/Users', serverCtrl.createUser);
-app.put('/api/Users/:userid', serverCtrl.updateUser);
-app.delete('/api/Users/:userid', serverCtrl.deleteUser);
+var serverCtrl = require('./server/serverCtrl');
+
 
 app.get('/api/Running/:username', serverCtrl.myRuns);
 app.get('/api/Running/:date', serverCtrl.getOneRun);

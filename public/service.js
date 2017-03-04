@@ -14,5 +14,9 @@ angular.module('workout')
   .then(function(response) {
     console.log(response)
   });
+  this.submitRide = (logRide) => $http.post('/api/Biking', logRide)
+  .then(function(response) {
+    console.log(response)
+  })
 
 })

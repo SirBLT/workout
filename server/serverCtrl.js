@@ -1,70 +1,41 @@
-var app = require('./server.js');
+var app = require('./../server.js');
 var db = app.get('db');
+var userArr = [];
 module.exports = {
-  getUsers: function (req, res) {
-    db.read_users([], function (err, results) {
-      console.log("test tickles")
-      if(err){
-        return res.send(err);
-      }
-      return res.send(results);
-    })
-  },
-  createUser:function(req, res) {
-    db.create_user([
-      req.body.username,
-      req.body.firstname,
-      req.body.lastname,
-      req.body.email,
-      req.body.password
-    ], function(err, results) {
-      if (err){
-        console.error(err);
-        return res.send(err);
-      }
-      res.send(results);
-    })
-  },
-  getUser:function(req, res) {
-    db.read_user([req.params.userid], function(err, results) {
-      if (err){
-        console.error(err);
-        return res.send(err);
-      }
-      if (results.length === 0) {
-        return res.status(404).send("User isn't be findeded");
-      }
-      return res.send(results);
-    })
-  },
-  updateUser:function(req, res) {
-    db.updateUser([
-      req.params.userid,
-      req.params.username,
-      req.params.firstname,
-      req.params.lastname,
-      req.params.email,
-      req.params.password
-    ], function(err, results) {
-      if (err){
-        console.error(err);
-        return res.send(err);
-      }
-      return res.send(results)
-    })
-  },
-  deleteUser:function(req, res) {
-    db.delete_user([req.params.userid], function(err, results) {
-      if (err) {
-        console.error(err);
-        return res.send(err);
-      }
-      if (results.length === 0) {
-        return res.status(404).send("You bein' a wise guy or sumtin'?")
-      }
-      return res.send("Good ol' " + results[0].username + " has been... 'taken care of'... Deal wit it!")
-    })
-  },
+  me: function(req, res, next) {
+		// Return user
+		return res.status(200)
+			.json(req.user);
+	},
+
+	// UPDATE CURRENT USER //
+	updateCurrent: function(req, res, next) {
+		var updateUser = req.body;
+		updateUser.user_id = req.user.user_id;
+
+		db.users.save(updateUser, function(err, user) {
+			if (err) {
+				console.log('User update error', err);
+
+				return res.status(401)
+					.send(err);
+			}
+
+			console.log('user: ', user);
+			req.session.passport.user = user;
+
+			res.status(200)
+				.send(user);
+		});
+	},
+  run: function() {
+		log('Initializing database');
+
+		db.initialize.tables_initialize(function(err, table) {
+			if (err) return log('Some tables failed to create');
+			else log('Tables successfully initialized');
+		});
+	},
   myRuns:function(req, res) {
     db.read_all_runs([req.params.username], function(err, results) {
       if (err) {
@@ -91,7 +62,7 @@ module.exports = {
   },
   createRun:function(req, res) {
     db.create_run_workout([
-      req.body.username,
+      req.body.email,
       req.body.date,
       req.body.timeofday,
       req.body.distance,
@@ -111,7 +82,7 @@ module.exports = {
   },
   updateRun:function(req, res) {
     db.update_run_workout([
-      req.body.username,
+      req.body.email,
       req.body.date,
       req.body.timeofday,
       req.body.distance,
@@ -167,13 +138,13 @@ module.exports = {
   },
   logSwoleSesh: function(req, res) {
     db.create_gym_workout([
-      req.body.userId,
+      req.body.userName,
       req.body.date,
       req.body.timeOfDay,
       req.body.muscleGroup,
       req.body.workoutLength,
       req.body.numberOfExercises,
-      req.body.difficultyLevel
+      req.body.difficulty
     ], function(err, results) {
       if (err) {
         console.error(err);
