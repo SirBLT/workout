@@ -1,2 +1,2 @@
 select * from Biking
-where userName = $1;
+where email = $1;

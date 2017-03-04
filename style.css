@@ -22,6 +22,30 @@ img.bench {
   width: 100%;
   opacity: 0.5;
 }
+.runRow {
+  text-align: center;
+}
+.runRow:hover {
+  background-color: black;
+
+
+}
+.runTable1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.thRun:hover {
+  font-size: 1.2em;
+}
+.runTable2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.runButton {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+}
 .site-wrap {
   background-image: url(bench.png);
   background-size: contain;
@@ -38,7 +62,7 @@ img.bench {
 }
 
 nav {
-  background:black;
+  background:purple;
   top:0;
   width: 100%;
   transition:all 0.5s;
@@ -49,11 +73,15 @@ nav {
   color: #EEEEEE;
   text-decoration: none;
   font-size: 20px;
-  background: rgba(0,0,0,0.2);
+  /*background: rgba(0,0,0,0.2);*/
   padding:10px 20px;
   display: inline-block;
   margin:20px;
   border-radius:5px;
+}
+.cool > li > a:hover {
+  color: black;
+  font-weight: bold;
 }
 
 body.fixed-nav nav {
@@ -76,29 +104,11 @@ nav li {
   justify-content: center;
   align-items: center;
 }
-
-li.logo {
-  max-width:0;
-  overflow: hidden;
-  background: purple;
-  transition: all 0.5s;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-li.logo a {
-  color:black;
-}
-
-.fixed-nav li.logo {
-  max-width:500px;
-}
-
 nav a {
   text-decoration: none;
   padding:20px;
   display: inline-block;
-  color:white;
+  color:black;
   transition:all 0.2s;
   text-transform: uppercase;
 }
@@ -218,5 +228,5 @@ nav a {
 
 .dropdown a {
   text-decoration: none;
-  color: purple;
+  color: black;
 }

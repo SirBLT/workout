@@ -184,7 +184,7 @@ module.exports = {
   },
   createBike:function(req, res) {
     db.create_biking_workout([
-      req.body.userName,
+      req.body.email,
       req.body.date,
       req.body.timeOfDay,
       req.body.distance,
@@ -228,7 +228,7 @@ module.exports = {
   },
   updateBikeRide:function(req, res) {
     db.update_biking_workout([
-      req.body.username,
+      req.body.email,
       req.body.date,
       req.body.timeofday,
       req.body.distance,
