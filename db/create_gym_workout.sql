@@ -1,4 +1,4 @@
 insert into MainWorkout
-  (userId, date, timeOfDay, muscleGroup, workoutLength, numberOfExercises, difficultyLevel)
+  (username, date, timeOfDay, muscleGroup, workoutLength, numberOfExercises, difficulty)
 VALUES
 ($1, $2, $3, $4, $5, $6, $7);

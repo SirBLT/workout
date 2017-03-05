@@ -1,2 +1,2 @@
 select * from MainWorkout
-where userId = $1
+where username = $1

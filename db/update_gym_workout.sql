@@ -1,6 +1,6 @@
 update MainWorkout
 set
-  userId = coalesce($1, userId),
+  username = coalesce($1, username),
   timeofday = coalesce($3, timeofday),
   muscleGroup = coalesce($4, muscleGroup),
   workoutlength = coalesce($5, workoutlength),

@@ -18,10 +18,6 @@ body.fixed-nav .site-wrap {
 .useless {
   height: 12vh;
 }
-img.bench {
-  width: 100%;
-  opacity: 0.5;
-}
 .runRow {
   text-align: center;
 }
@@ -47,10 +43,10 @@ img.bench {
   right: 45%;
 }
 .site-wrap {
-  background-image: url(bench.png);
+  background-image: url(bench1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 175vh;
+  height: 250vh;
   width: 100%;
 
 }
@@ -63,14 +59,20 @@ img.bench {
 
 nav {
   background:purple;
+  border: 2px solid black;
   top:0;
   width: 100%;
   transition:all 0.5s;
   position: fixed;
   z-index: 1;
 }
+ {
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.5)
+
+}
 .cool > li > a {
   color: #EEEEEE;
+  text-shadow: none;
   text-decoration: none;
   font-size: 20px;
   /*background: rgba(0,0,0,0.2);*/
@@ -103,6 +105,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 nav a {
   text-decoration: none;
@@ -120,6 +123,7 @@ nav a {
   position: relative;
   display:flex;
   justify-content: center;
+
 }
 
 .dropdown {
@@ -229,4 +233,33 @@ nav a {
 .dropdown a {
   text-decoration: none;
   color: black;
+}
+.homeContainer {
+  position: absolute;
+  top: 130vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 120vh;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.box {
+  padding-left: 75px;
+  padding-bottom: 50px;
+  width: 47%;
+  height: 50vh;
+}
+.box1 {
+  padding-top: 40px;
+}
+.box2 {
+  padding-left: 150px;
+  padding-top: 40px;
+}
+.box3 {
+}
+.box4 {
+  padding-left: 150px;
 }
