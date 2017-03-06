@@ -29,5 +29,11 @@ angular.module('workout', ['ui.router'])
     controller: 'bikeCtrl',
     templateUrl: '/views/log-bike.html'
   })
+  .state('logGym', {
+    url: '/log-gym',
+    controller: 'gymCtrl',
+    templateUrl: '/views/log-gym.html'
+  })
+
 
 })

@@ -67,7 +67,6 @@ nav {
   z-index: 1;
 }
  {
-  text-shadow: 3px 4px 0 rgba(0,0,0,0.5)
 
 }
 .cool > li > a {
@@ -84,6 +83,8 @@ nav {
 .cool > li > a:hover {
   color: black;
   font-weight: bold;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+
 }
 
 body.fixed-nav nav {
@@ -262,4 +263,43 @@ nav a {
 }
 .box4 {
   padding-left: 150px;
+}
+.mwk {
+  text-align: center;
+  font-family: cursive;
+}
+.gymTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+.gymButton {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+}
+.gymButton:hover {
+  color: purple;
+  background-color: black;
+}
+.trowMgym {
+  background-color: purple;
+  line-height: 3vh;
+}
+.gymRow {
+  text-align: center;
+}
+.wRow:hover {
+  background-color: black;
+}
+.thMgym {
+  font-family: fantasy;
+  font-weight: lighter;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+
+}
+.thMgym:hover {
+  font-size: 1.2em;
+}
+.wRow {
+  text-align: center;
 }

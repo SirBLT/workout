@@ -63,9 +63,9 @@ app.delete('/api/Running/:date', serverCtrl.deleteRun);
 
 app.get('/api/MainWorkout/:userId', serverCtrl.mySwoleSessions);
 app.get('/api/MainWorkout/:date', serverCtrl.oneTimeSwole);
-app.post('/api/MainWorkout/Gym', serverCtrl.logSwoleSesh);
-app.put('/api/MainWorkout/Gym:date', serverCtrl.seshDeets);
-app.delete('/api/MainWorkout/Gym:date', serverCtrl.deleteSesh);
+app.post('/api/MainWorkout/', serverCtrl.logSwoleSesh);
+app.put('/api/MainWorkout/:date', serverCtrl.seshDeets);
+app.delete('/api/MainWorkout/:date', serverCtrl.deleteSesh);
 
 app.get('/api/Biking/:userName', serverCtrl.getBikeRides);
 app.get('/api/Biking/:date', serverCtrl.getOneRide);
@@ -73,6 +73,7 @@ app.post('/api/Biking', serverCtrl.createBike);
 app.put('/api/Biking/:date', serverCtrl.updateBikeRide);
 app.delete('/api/Biking/:date', serverCtrl.deleteBikeRide);
 
+app.post('/api/perExercise', serverCtrl.logLift);
 
 
 var port = config.port;

@@ -138,13 +138,14 @@ module.exports = {
   },
   logSwoleSesh: function(req, res) {
     db.create_gym_workout([
-      req.body.userName,
+      req.body.email,
       req.body.date,
       req.body.timeOfDay,
-      req.body.muscleGroup,
+      req.body.mGroup,
       req.body.workoutLength,
-      req.body.numberOfExercises,
-      req.body.difficulty
+      req.body.numOfExercises,
+      req.body.difficulty,
+      req.body.workoutNotes
     ], function(err, results) {
       if (err) {
         console.error(err);
@@ -199,7 +200,7 @@ module.exports = {
         console.error(err);
         return res.send(err);
       }
-      return res.send(results);
+      res.send(results);
     })
   },
   getBikeRides:function(req, res) {
@@ -258,4 +259,21 @@ module.exports = {
       return res.send("I maintain that you never went for a ride on " + results[0].date + "...")
     })
   },
+  logLift:function(req, res) {
+    db.create_lift([
+      req.body.email,
+      req.body.date,
+      req.body.exercise,
+      req.body.sets,
+      req.body.reps,
+      req.body.weight,
+      req.body.otherNotes
+    ], function(err, results) {
+      if (err) {
+        console.error(err);
+        return res.send(err);
+      }
+      res.send(results)
+    })
+  }
 }

@@ -1,8 +1,8 @@
 angular.module('workout')
 .controller('bikeCtrl', function($scope, mainService) {
 
-$scope.submitLog = function(logRide){
-  mainService.submitLog(logRide)
+$scope.submitRide = function(logRide){
+  mainService.submitRide(logRide)
 }
 
 });

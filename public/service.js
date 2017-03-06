@@ -18,5 +18,13 @@ angular.module('workout')
   .then(function(response) {
     console.log(response)
   })
+  this.submitGym = (logGym) => $http.post('/api/MainWorkout', logGym)
+  .then(function(response) {
+    console.log(response)
+  })
+  this.submitLift = (logLift) => $http.post('/api/perExercise', logLift)
+  .then(function(response) {
+    console.log(response)
+  })
 
 })

@@ -1,42 +1,41 @@
 <div class="tableWrapper">
   <br>
-  <br>
-  <table class="runTable1">
-    <th class="thRun">Email Address</th>
-    <th class="thRun">Date</th>
-    <th class="thRun">Time Of Day</th>
-    <th class="thRun">Distance</th>
-    <th class="thRun">Workout Length</th>
-    <tr class="trow1">
-      <td><input class="runRow" type="text" placeholder="Enter Email"ng-model="logRun.email"></td>
-      <td><input class="runRow" type="text" placeholder="MM/DD/YYYY" ng-model="logRun.date"></td>
-      <td><input class="runRow" type="text" placeholder="HH:MM (am/pm)" ng-model="logRun.timeofday"></td>
-      <td><input class="runRow" type="text" placeholder="Miles" ng-model="logRun.distance"></td>
-      <td><input class="runRow" type="text" placeholder="#HR #MIN" ng-model="logRun.workoutlength"></td>
-    </tr>
-  </table>
-  <br>
-  <br>
+  <h1 class="mwk">Log Your Latest Run/Jog</h1>
   <hr>
-  <table class="runTable2">
-    <th class="thRun">Avg Speed</th>
-    <th class="thRun">Avg HeartRate</th>
-    <th class="thRun">Surface Type</th>
-    <th class="thRun">Difficulty Level</th>
-    <th class="thRun">Other Notes</th>
-    <tr class="trow2">
-      <td><input class="runRow" type="text" placeholder="MM:SS / Mile" ng-model="logRun.avgspeed"></td>
-      <td><input class="runRow" type="text" placeholder="#BPM"ng-model="logRun.avghr"></td>
-      <td><input class="runRow" type="text" placeholder="Treadmill/Road/Etc"ng-model="logRun.surfacetype"></td>
-      <td><input class="runRow" type="text" placeholder="# From 1 - 10" ng-model="logRun.difficulty"></td>
-      <td><input class="runRow" type="text" placeholder="Workout Notes" ng-model="logRun.othernotes"></td>
+  <br>
+  <table class="gymTable">
+    <th class="thMgym">Email Address</th>
+    <th class="thMgym">Date</th>
+    <th class="thMgym">Time Of Day</th>
+    <th class="thMgym">Distance</th>
+    <th class="thMgym">Workout Length</th>
+    <tr class="trowMgym">
+      <td><input class="wRow" type="text" placeholder="Enter Email"ng-model="logRun.email"></td>
+      <td><input class="wRow" type="text" placeholder="MM/DD/YYYY" ng-model="logRun.date"></td>
+      <td><input class="wRow" type="text" placeholder="HH:MM (am/pm)" ng-model="logRun.timeofday"></td>
+      <td><input class="wRow" type="text" placeholder="Miles" ng-model="logRun.distance"></td>
+      <td><input class="wRow" type="text" placeholder="#HR #MIN" ng-model="logRun.workoutlength"></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table class="gymTable">
+    <th class="thMgym">Avg Speed</th>
+    <th class="thMgym">Avg HeartRate</th>
+    <th class="thMgym">Surface Type</th>
+    <th class="thMgym">Difficulty Level</th>
+    <th class="thMgym">Other Notes</th>
+    <tr class="trowMgym">
+      <td><input class="wRow" type="text" placeholder="MM:SS / Mile" ng-model="logRun.avgspeed"></td>
+      <td><input class="wRow" type="text" placeholder="#BPM"ng-model="logRun.avghr"></td>
+      <td><input class="wRow" type="text" placeholder="Treadmill/Road/Etc"ng-model="logRun.surfacetype"></td>
+      <td><input class="wRow" type="text" placeholder="# From 1 - 10" ng-model="logRun.difficulty"></td>
+      <td><input class="wRow" type="text" placeholder="Workout Notes" ng-model="logRun.othernotes"></td>
     </tr>
   </table>
 <br>
 <br>
-<hr>
-<div class="runButton">
-  <button ng-click="submitLog(logRun)">Submit Workout</button>
-</div>
-
+  <button class="gymButton" ng-click="submitLog(logRun)">Submit Workout</button>
+<br>
+<br>
 </div>

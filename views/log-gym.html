@@ -1,0 +1,64 @@
+<div class="tableWrapper">
+  <br>
+  <h1 class="mwk">Gym Workout Basics</h1>
+  <hr>
+  <br>
+  <table class="gymTable">
+    <th class="thMgym">Email Address</th>
+    <th class="thMgym">Date</th>
+    <th class="thMgym">Time Of Day</th>
+    <th class="thMgym">Muscle Group</th>
+    <tr class="trowMgym">
+      <td><input class="wRow" type="text" placeholder="Enter Email"ng-model="logGym.email"></td>
+      <td><input class="wRow" type="text" placeholder="MM/DD/YYYY" ng-model="logGym.date"></td>
+      <td><input class="wRow" type="text" placeholder="HH:MM (am/pm)" ng-model="logGym.timeOfDay"></td>
+      <td><input class="wRow" type="text" placeholder="Muscle" ng-model="logGym.mGroup"></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table class="gymTable">
+    <th class="thMgym">Workout Length</th>
+    <th class="thMgym"># of Exercises</th>
+    <th class="thMgym">Difficulty Level</th>
+    <th class="thMgym">Workout Notes</th>
+    <tr class="trowMgym">
+      <td><input class="wRow" type="text" placeholder="Hours:Minutes" ng-model="logGym.workoutLength"></td>
+      <td><input class="wRow" type="text" placeholder="Exercises" ng-model="logGym.numOfExercises"></td>
+      <td><input class="wRow" type="text" placeholder="1-10"ng-model="logGym.difficulty"></td>
+      <td><input class="wRow" type="text" placeholder="Notes About Workout"ng-model="logGym.workoutNotes"></td>
+    </tr>
+  </table>
+<br>
+<br>
+  <button class="gymButton" ng-click="submitGym(logGym)">Submit Workout</button>
+<br>
+<br>
+<hr>
+<br>
+<h1 class="mwk">Workout Specifics</h1>
+<hr>
+<table class="gymTable">
+  <th class="thMgym">Email Address</th>
+  <th class="thMgym">Date</th>
+  <th class="thMgym">Exercise</th>
+  <th class="thMgym">Sets</th>
+  <th class="thMgym">Reps</th>
+  <th class="thMgym">Weight</th>
+  <th class="thMgym">Notes</th>
+  <tr class="trowMgym">
+    <td><input class="wRow" type="text" placeholder="Enter Email"ng-model="logLift.email"></td>
+    <td><input class="wRow" type="text" placeholder="MM/DD/YYYY" ng-model="logLift.date"></td>
+    <td><input class="wRow" type="text" placeholder="HH:MM (am/pm)" ng-model="logLift.exercise"></td>
+    <td><input class="wRow" type="text" placeholder="Sets" ng-model="logLift.sets"></td>
+    <td><input class="wRow" type="text" placeholder="Reps" ng-model="logLift.reps"></td>
+    <td><input class="wRow" type="text" placeholder="Weight" ng-model="logLift.weight"></td>
+    <td><input class="wRow" type="text" placeholder="Notes" ng-model="logLift.otherNotes"></td>
+  </tr>
+</table>
+<br>
+<br>
+<button class="gymButton" ng-click="submitLift(logLift)">Submit Workout</button>
+<br>
+<br>
+</div>
