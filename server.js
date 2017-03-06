@@ -61,6 +61,7 @@ app.post('/api/Running', serverCtrl.createRun);
 app.put('/api/Running/:date', serverCtrl.updateRun);
 app.delete('/api/Running/:date', serverCtrl.deleteRun);
 
+app.post('/api/MainWorkout', serverCtrl.getJoinDate);
 app.get('/api/MainWorkout/:userId', serverCtrl.mySwoleSessions);
 app.get('/api/MainWorkout/:date', serverCtrl.oneTimeSwole);
 app.post('/api/MainWorkout/', serverCtrl.logSwoleSesh);

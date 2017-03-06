@@ -289,7 +289,7 @@ nav a {
   text-align: center;
 }
 .wRow:hover {
-  background-color: black;
+  background-color: purple;
 }
 .thMgym {
   font-family: fantasy;
@@ -302,4 +302,26 @@ nav a {
 }
 .wRow {
   text-align: center;
+}
+.joinInput {
+  text-align: center;
+  position: absolute;
+  left: 43%;
+  right: 43%;
+}
+.joinInput:hover {
+  background-color: purple;
+}
+.myWorkout {
+  text-align: center;
+  font-weight: bold;
+}
+.joinButton {
+  position: absolute;
+  left: 47%;
+  right: 47%;
+}
+.joinButton:hover {
+  color: purple;
+  background-color: black;
 }

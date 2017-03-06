@@ -21,7 +21,7 @@ angular.module('workout', ['ui.router'])
   })
   .state('myWorkouts', {
     url: '/my-workouts',
-    controller: 'mainCtrl',
+    controller: 'joinCtrl',
     templateUrl: '/views/my-workouts.html'
   })
   .state('logBike', {
@@ -34,6 +34,10 @@ angular.module('workout', ['ui.router'])
     controller: 'gymCtrl',
     templateUrl: '/views/log-gym.html'
   })
-
+  .state('chestList', {
+    url: '/chest',
+    controller: 'chestCtrl',
+    templateUrl: '/views/chestWorkouts.html'
+  })
 
 })

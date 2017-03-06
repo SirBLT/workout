@@ -275,5 +275,19 @@ module.exports = {
       }
       res.send(results)
     })
+  },
+  getJoinDate:function(req, res) {
+    console.log(req.body.gymJoin)
+    db.return_workout_join([req.body.gymJoin], function(err, results) {
+      console.log(results);
+      if (err) {
+        console.error(err);
+        return res.send(err);
+      }
+      if (results.length === 0) {
+        return res.status(404).send("Looks like you were lazy that day...")
+      }
+      return res.send(results)
+    })
   }
 }
