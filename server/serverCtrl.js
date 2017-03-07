@@ -37,7 +37,7 @@ module.exports = {
 		});
 	},
   myRuns:function(req, res) {
-    db.read_all_runs([req.params.username], function(err, results) {
+    db.read_all_runs([req.params.email], function(err, results) {
       if (err) {
         console.error(err);
         return res.send(err);

@@ -24,6 +24,11 @@ angular.module('workout', ['ui.router'])
     controller: 'joinCtrl',
     templateUrl: '/views/my-workouts.html'
   })
+  .state('myRuns', {
+    url: '/my-runs',
+    controller: 'runshowCtrl',
+    templateUrl: '/views/my-runs.html'
+  })
   .state('logBike', {
     url: '/log-bike',
     controller: 'bikeCtrl',

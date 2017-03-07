@@ -1,0 +1,36 @@
+<div class="useless"></div>
+<div>
+  <h3 class="mwk">ENTER THE DATE YOU'RE LOOKING FOR</h3>
+  <input class="joinInput" type="text" placeholder="MM/DD/YYYY" ng-model="grabRuns">
+  <br>
+  <button class="joinButton" ng-click="showRuns(grabRuns)">Submit</button>
+</div>
+<br>
+<hr>
+<table class="joinedTable">
+  <tr class="thR">
+   <th class="thJ">Email Address</th>
+   <th class="thJ">Workout Date</th>
+   <th class="thJ">Time of Day</th>
+   <th class="thJ">Distance</th>
+   <th class="thJ">Workout Length</th>
+   <th class="thJ">Average Speed</th>
+   <th class="thJ">Average HR</th>
+   <th class="thJ">Surface Type</th>
+   <th class="thJ">Difficulty Level</th>
+   <th class="thJ">Workout Notes</th>
+  </tr>
+  <tr class="tdR" ng-repeat="run in runs">
+    <td> {{run.email}} </td>
+    <td> {{run.date}} </td>
+    <td> {{run.timeofday}} </td>
+    <td> {{run.distance}} </td>
+    <td> {{run.workoutlength}} </td>
+    <td> {{run.avgspeed}} </td>
+    <td> {{run.avghr}} </td>
+    <td> {{run.surfacetype}} </td>
+    <td> {{run.difficulty}} </td>
+    <td> {{run.othernotes}} </td>
+  </tr>
+
+</table>

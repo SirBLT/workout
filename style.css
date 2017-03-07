@@ -46,7 +46,7 @@ body.fixed-nav .site-wrap {
   background-image: url(bench1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 250vh;
+  height: 230vh;
   width: 100%;
 
 }
@@ -237,7 +237,7 @@ nav a {
 }
 .homeContainer {
   position: absolute;
-  top: 130vh;
+  top: 115vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -324,4 +324,18 @@ nav a {
 .joinButton:hover {
   color: purple;
   background-color: black;
+}
+.joinedTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+.thJ {
+  text-align: center;
+}
+.tdR {
+  text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }

@@ -5,4 +5,28 @@
   <br>
   <button class="joinButton" ng-click="submitJoin(gymJoin)">Submit</button>
 </div>
-{{joined}}
+<br>
+<hr>
+<table class="joinedTable">
+  <tr class="thR">
+   <th class="thJ">Email Address</th>
+   <th class="thJ">Workout Date</th>
+   <th class="thJ">Muscle Group</th>
+   <th class="thJ">Exercise Name</th>
+   <th class="thJ">Number Of Sets</th>
+   <th class="thJ">Reps Breakdown</th>
+   <th class="thJ">Weight Breakdown</th>
+   <th class="thJ">Workout Notes</th>
+  </tr>
+  <tr class="tdR" ng-repeat="join in joined">
+    <td> {{join.email}} </td>
+    <td> {{join.date}} </td>
+    <td> {{join.mgroup}} </td>
+    <td> {{join.exercise}} </td>
+    <td> {{join.sets}} </td>
+    <td> {{join.reps}} </td>
+    <td> {{join.weight}} </td>
+    <td> {{join.othernotes}} </td>
+  </tr>
+
+</table>

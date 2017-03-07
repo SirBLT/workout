@@ -55,20 +55,20 @@ app.get('/auth/me', function(req, res, next) {
 var serverCtrl = require('./server/serverCtrl');
 
 
-app.get('/api/Running/:username', serverCtrl.myRuns);
+app.get('/api/Running/:email', serverCtrl.myRuns);
 app.get('/api/Running/:date', serverCtrl.getOneRun);
 app.post('/api/Running', serverCtrl.createRun);
 app.put('/api/Running/:date', serverCtrl.updateRun);
 app.delete('/api/Running/:date', serverCtrl.deleteRun);
 
-app.post('/api/MainWorkout', serverCtrl.getJoinDate);
+app.post('/api/perExercise', serverCtrl.getJoinDate);
 app.get('/api/MainWorkout/:userId', serverCtrl.mySwoleSessions);
 app.get('/api/MainWorkout/:date', serverCtrl.oneTimeSwole);
 app.post('/api/MainWorkout/', serverCtrl.logSwoleSesh);
 app.put('/api/MainWorkout/:date', serverCtrl.seshDeets);
 app.delete('/api/MainWorkout/:date', serverCtrl.deleteSesh);
 
-app.get('/api/Biking/:userName', serverCtrl.getBikeRides);
+app.get('/api/Biking/:email', serverCtrl.getBikeRides);
 app.get('/api/Biking/:date', serverCtrl.getOneRide);
 app.post('/api/Biking', serverCtrl.createBike);
 app.put('/api/Biking/:date', serverCtrl.updateBikeRide);

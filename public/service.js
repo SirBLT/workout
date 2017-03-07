@@ -21,11 +21,15 @@ angular.module('workout')
   .then(function(response) {
     console.log(response)
   })
-  this.submitJoin = (gymJoin) => $http.post('/api/MainWorkout/', {gymJoin:gymJoin})
+  this.submitJoin = (gymJoin) => $http.post('/api/perExercise/', {gymJoin:gymJoin})
   .then(function(response) {
     console.log(response)
     return response;
   })
-
+  this.showRuns = (grabRuns) => $http.get('/api/Running/:email')
+  .then(function(response) {
+    console.log(response)
+    return response;
+  })
 
 })
